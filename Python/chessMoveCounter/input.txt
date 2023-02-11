@@ -1,0 +1,6 @@
+Input is two numbers separated by a space, ideally use up to 8 to mimic chess board.
+1 2
+2 1
+4 3
+6 3
+Etc.
