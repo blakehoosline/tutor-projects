@@ -44,6 +44,7 @@ if ($player > $com) {
             <?= $player ?>
         </p>
         <p>
+        <div style="display: inline-block;">
             <?php
             switch ($Dice[0]) {
                 case 1:
@@ -65,6 +66,7 @@ if ($player > $com) {
                     echo '<img src="/images/dice6.png">';
                     break;
             }
+
             switch ($Dice[1]) {
                 case 1:
                     echo '<img src="/images/dice1.png ">';
@@ -86,11 +88,13 @@ if ($player > $com) {
                     break;
             }
             ?>
+        </div>
         </p>
         <p>Computers score:
             <?= $com ?>
         </p>
         <p>
+        <div style="display: inline-block;">
             <?php
             switch ($Dice[2]) {
                 case 1:
@@ -153,6 +157,7 @@ if ($player > $com) {
                     break;
             }
             ?>
+        </div>
         </p>
         <p>Result:
             <?= $result ?>
