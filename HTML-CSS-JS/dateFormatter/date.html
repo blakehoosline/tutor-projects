@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Format</title>
+    </head>
+    <body>
+        <form>
+            <div>
+            <label for="date">Enter date:</label>
+            <input type="text" id="date" name="date">
+            </div>
+            <div>
+            <label for="format">Enter format:</label>
+            <input type="text" id="format" name="format">
+            </div>
+            <div>
+            <button type="button" id="validate-button">Validate</button>
+            </div>
+        </form>
+        <div id="result"></div>
+        <script src="date.js"></script>
+        <script>
+            const validateButton = document.getElementById('validate-button');
+            const result = document.getElementById('result');
+            validateButton.addEventListener('click', () => {
+            const date = document.getElementById('date').value;
+            const format = document.getElementById('format').value;
+            if (validateDate(date, format)) {
+                result.innerHTML = 'Valid Date';
+            } else {
+                result.innerHTML = 'Invalid Date';
+            }
+            });
+        </script>
+    </body>
+</html>
