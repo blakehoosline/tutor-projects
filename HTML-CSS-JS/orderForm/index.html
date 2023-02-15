@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order Form</title>
+    <script src="order.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></style>
+  </head>
+  <body>
+    <h1>Order Form</h1>
+    <form id="order-form" onsubmit="return processOrder()">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="First Last">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="email@domain.com">
+
+      <label for="credit-card">Credit Card</label>
+      <input type="text" id="credit-card" name="credit-card" pattern="\d{4}-\d{4}-\d{4}-\d{4}" required placeholder="xxxx-xxxx-xxxx-xxxx">
+      
+      <label for="expiry-month">Expiry Month (MMM)</label>
+      <input type="text" id="expiry-month" name="expiry-month" pattern="[A-Za-z]{3}" required placeholder="MMM">
+
+      <label for="expiry-year">Expiry Year (yyyy)</label>
+      <input type="text" id="expiry-year" name="expiry-year" pattern="\d{4}" required placeholder="yyyy">
+
+      <h2>Buy generously</h2>
+
+      <label for="item1"></label>
+      <input type="text" id="item1" name="item1" value="Water Bottles ($5)">
+      <label for="item1-quantity"></label>
+      <input type="text" id="item1-quantity" name="item1-quantity" placeholder="10">
+
+      <label for="item2"></label>
+      <input type="text" id="item2" name="item2" value="Number of Caps ($20)">
+      <label for="item2-quantity"></label>
+      <input type="text" id="item2-quantity" name="item2-quantity" placeholder="10">
+
+      <label for="item3"></label>
+      <input type="text" id="item3" name="item3" value="Number of Pens ($2)">
+      <label for="item3-quantity"></label>
+      <input type="text" id="item3-quantity" name="item3-quantity" placeholder="10">
+
+      <label for="item4"></label>
+      <input type="text" id="item4" name="item4" value="Number of Candy Bags ($10)">
+      <label for="item4-quantity"></label>
+      <input type="text" id="item4-quantity" name="item4-quantity" placeholder="10">
+
+      <label for="item5"></label>
+      <input type="text" id="item5" name="item5" value="Number of Cup Cakes ($3)">
+      <label for="item5-quantity"></label>
+      <input type="text" id="item5-quantity" name="item5-quantity" placeholder="10">
+
+      <button type="submit">Checkout</button>
+    </form>
+
+    <div id="error-message"></div>
+    <div id="receipt" style="display: none;"></div>
+  </body>
+</html>
