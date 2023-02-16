@@ -40,13 +40,23 @@ CREATE TABLE DEPARTMENT (
     mgrstartdate DATE
 );
 
-INSERT INTO DEPARTMENT (dname, dnumber, mgrssn, mgrstartdate) VALUES 
-('Research', 5, '333445555', '1978-05-22'),
-('Administration', 4, '987654321', '1985-01-01'),
-('Headquarters', 1, '888665555', '1971-06-19'),
-('Software', 6, '111111100', '1999-05-15'),
-('Hardware', 7, '444444400', '1998-05-15'),
-('Sales', 8, '555555500', '1997-01-01');
+INSERT INTO DEPARTMENT (dname, dnumber, mgrssn, mgrstartdate) 
+VALUES ('Research', 5, '333445555', '1978-05-22');
+
+INSERT INTO DEPARTMENT (dname, dnumber, mgrssn, mgrstartdate) 
+VALUES ('Administration', 4, '987654321', '1985-01-01');
+
+INSERT INTO DEPARTMENT (dname, dnumber, mgrssn, mgrstartdate) 
+VALUES ('Headquarters', 1, '888665555', '1971-06-19');
+
+INSERT INTO DEPARTMENT (dname, dnumber, mgrssn, mgrstartdate) 
+VALUES ('Software', 6, '111111100', '1999-05-15');
+
+INSERT INTO DEPARTMENT (dname, dnumber, mgrssn, mgrstartdate) 
+VALUES ('Hardware', 7, '444444400', '1998-05-15');
+
+INSERT INTO DEPARTMENT (dname, dnumber, mgrssn, mgrstartdate) 
+VALUES ('Sales', 8, '555555500', '1997-01-01');
 
 
 --Step 3
