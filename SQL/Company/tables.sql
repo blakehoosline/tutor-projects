@@ -377,3 +377,7 @@ VALUES ('111111102', 61, 40.0);
 
 INSERT INTO WORKS_ON (essn, pno, hours) 
 VALUES ('111111103', 61, 40.0);
+
+
+
+SELECT COUNT(*) FROM department, dependent, dept_locations, employee, project, works_on;
